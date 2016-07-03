@@ -1,6 +1,7 @@
 {
     "name": "mtymek/blast-test-utils",
     "description": "Utilities for testing integrity of services managed by Zend\\ServiceManager",
+    "license": "BSD-2-Clause",
     "authors": [
         {
             "name": "Mateusz Tymek",
