@@ -2,7 +2,8 @@
 
 namespace Blast\TestUtils;
 
-use Zend\ServiceManager\ServiceManager;
+use Generator;
+use Laminas\ServiceManager\ServiceManager;
 
 trait ServiceIntegrityTestTrait
 {
@@ -21,9 +22,8 @@ trait ServiceIntegrityTestTrait
 
     /**
      * Load all available services from module configuration
-     * @return array
      */
-    public function provideServicesToCheck()
+    public function provideServicesToCheck(): Generator
     {
         self::createSm();
         $services = self::$config[$this->getServiceManagerConfigKey()];

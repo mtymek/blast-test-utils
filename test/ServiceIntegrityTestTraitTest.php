@@ -6,9 +6,9 @@ use Blast\Test\TestUtils\Asset\BarService;
 use Blast\Test\TestUtils\Asset\BarServiceFactory;
 use Blast\Test\TestUtils\Asset\FooService;
 use Blast\TestUtils\ServiceIntegrityTestTrait;
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 
-class ServiceIntegrityTestTraitTest extends PHPUnit_Framework_TestCase
+class ServiceIntegrityTestTraitTest extends TestCase
 {
     use ServiceIntegrityTestTrait;
 
